@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;900&display=swap);
+@font-face {font-family: digitalFont; src: url(assets/fonts/Digital7-rg1mL.ttf);}
+html {
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #1B252E;
+    font-family: 'Inconsolata', monospace;
+}
+#resultado {
+    height: 70px;
+    border: none;
+    font-size: 50px;
+    text-align: end;
+    border-radius: 10px;
+    color: antiquewhite;
+    width: calc(100% - 9px);
+    font-family: digitalFont;
+    background-color: #12161a;
+    -webkit-text-stroke: 2px #12161a;
+}
+#resultado:focus {
+    outline: 0;
+}
+
+.bateria {
+    padding: 5px;
+    float: right;
+    width: fit-content;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: #12161a;
+}
+.bateria ul {
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.bateria ul li {
+    width: 25px;
+    height: 50px;
+    background-color: #1B252E;
+}
+.bateria ul li:first-child {
+    width: 10px;
+}
+.bateria ul li:last-child {
+    width: 8px;
+}
+
+.calculadora {
+    top: 50%;
+    left: 50%;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    border-radius: 30px;
+    align-items: flex-end;
+    flex-direction: column;
+    background-color: #171e24;
+    transform: translate(-50%,-50%);
+}
+.btn {
+    margin: 3px;
+    height: 70px;
+    border: none;
+    min-width: 70px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: antiquewhite;
+    width: calc(100% - 9px);
+    background-color: #1B252E;
+
+}
+.btn:hover {
+    background-color: #1f3b53;
+}
+.logo_bianca {
+    gap: 5px;
+    width: 100%;
+    bottom: 30px;
+    display: flex;
+    position: fixed;
+    margin-top: 90px;
+    align-items: center;
+    color: antiquewhite;
+    justify-content: center;
+}
+.logo_bianca img{
+    width: 40px;
+    filter: brightness(300);
+}
+
+@media screen and (max-width:375px){
+    .calculadora {
+        transform: translate(-50%,-50%) scale(.8);
+    }
+    
+}
